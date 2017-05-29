@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Stackoverflow Focus",
+  "version": "0.0.1",
+  "description": "Tiny Stackoverflow cleanup; inspired by Karpathy Twitteropt.",
+
+  "permissions": [
+    "http://stackoverflow.com/",
+    "https://stackoverflow.com/",
+    "http://stackexchange.com/",
+    "https://stackexchange.com/",
+    "storage",
+    "activeTab"
+  ],
+
+  "web_accessible_resources": ["jquery-2.0.3.min.map"],
+
+  "content_scripts": [
+    {
+        "matches": ["http://stackoverflow.com/*","https://stackoverflow.com/*","http://stackexchange.com/*","https://stackexchange.com/*"], 
+        "js": ["jquery-2.0.3.min.js", "main.js"],
+        "run_at": "document_end",
+        "all_frames": true
+    }
+  ]
+}
