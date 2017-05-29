@@ -1,9 +1,15 @@
 
 // two-minute hack to promote focus on Stackoverflow
+
 // e.g. remove the mostly ridiculous so-called 'hot network questions'
+
 // this v0.0.1 does not block ad or job panel
+
 // inspired by twitteropt/main.js via Andrej Karpathy
+
 // https://karpathy.github.io/2013/11/23/chrome-extension-programming/
+
+super hacky but I already love it
 
 fork of AK's instructions:
 
